@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <cover-image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></cover-image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">测试</text>
+    <button bindtap="click" hidden="{{num <= 3}}">{{try}}</button>
+  </view>
+  <view wx:for="{{json}}" wx:for-index="idx" wx:for-item="itemName" wx:key="key1">
+    第{{idx + 1}}个位置的名称:{{itemName.name}}
+  </view>
+  <block wx:for="{{[1, 2, 3]}}" wx:key="key2">
+    <view> {{index}}:{{item}} </view>
+  </block>
+  <block wx:if="{{true}}">
+    <view>123</view>
+  </block>
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble">
+  <cover-view class="controls">
+    <cover-view class="play" bindtap="play">
+      <button class="img">开始</button>
+    </cover-view>
+    <cover-view class="pause" bindtap="pause">
+      <button class="img">暂停</button>
+    </cover-view>
+    <cover-view class="time">00:00</cover-view>
+  </cover-view>
+</video>
+
+</view>

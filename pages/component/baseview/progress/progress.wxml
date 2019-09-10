@@ -1,0 +1,4 @@
+<progress percent="20" show-info border-radius="10" font-size="20"/>
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active backgroundColor="#000"/>

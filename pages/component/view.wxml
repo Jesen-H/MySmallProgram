@@ -1,0 +1,7 @@
+<view class="container">
+  <view wx:for="{{array}}" wx:for-index='idx' wx:for-item='item' wx:key="key">
+    <button class="container-button" bindtap="click" id="{{idx}}">
+      {{item.name}}
+    </button>
+  </view>
+</view>
