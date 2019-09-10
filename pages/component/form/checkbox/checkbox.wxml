@@ -1,0 +1,6 @@
+<!--pages/component/form/checkbox/checkbox.wxml-->
+<checkbox-group bindchange="checkboxChange">
+  <label wx:for="{{array}}" wx:key="key" wx:for-index="i" wx:for-item="item">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}"/>{{item.value}}
+  </label>
+</checkbox-group>

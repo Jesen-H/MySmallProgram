@@ -1,0 +1,13 @@
+<!--pages/component/form/editor/editor.wxml-->
+<editor
+  id="editor"
+  class="ql-container"
+  placeholder="{{placeholder}}"
+  showImgSize
+  showImgToolbar
+  showImgResize
+  bindstatuschange="onStatusChange"
+  bindblur="format"
+  read-only="{{false}}"
+  bindready="onEditorReady">
+</editor>

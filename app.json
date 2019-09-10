@@ -4,7 +4,13 @@
     "pages/component/view",
     "pages/component/baseview/icon/icon",
     "pages/component/baseview/progress/progress",
-    "pages/component/baseview/rich-text/rchText"
+    "pages/component/baseview/rich-text/rchText",
+    "pages/component/form/button/button",
+    "pages/component/form/checkbox/checkbox",
+    "pages/component/form/editor/editor",
+    "pages/component/form/form/form",
+    "pages/component/form/input/input",
+    "pages/component/form/lable/lable"
   ],
   "window": {
     "backgroundColor": "#000000",

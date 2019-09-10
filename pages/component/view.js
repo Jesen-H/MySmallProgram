@@ -6,7 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    array: [{ id: '0', name: 'icon' }, { id: '1', name: 'progress' }, { id: '2', name: 'rich-text' }, { id: '3', name: 'text' }]
+    array: [
+      { name: 'icon' },
+      { name: 'progress' }, 
+      { name: 'rich-text' }, 
+      { name: 'button' },
+      { name: 'checkbox'},
+      { name: 'editor' },
+      { name: 'form' },
+      { name: 'input' },
+      { name: 'label' },
+    ]
   },
   click: function(e){
     //获取下标
@@ -20,6 +30,24 @@ Page({
         break;
       case 2:
         this.navigateTo('../component/baseview/rich-text/rchText')
+        break;
+      case 3:
+        this.navigateTo('../component/form/button/button')
+        break;
+      case 4:
+        this.navigateTo('../component/form/checkbox/checkbox')
+        break;
+      case 5:
+        this.navigateTo('../component/form/editor/editor')
+        break;
+      case 6:
+        this.navigateTo('../component/form/form/form')
+        break;
+      case 7:
+        this.navigateTo('../component/form/input/input')
+        break;
+      case 8:
+        this.navigateTo('../component/form/lable/lable')
         break;
     }
   },
